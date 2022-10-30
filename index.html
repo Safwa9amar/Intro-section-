@@ -199,30 +199,14 @@
           />
         </article>
       </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.frontendmentor.io/profile/Safwa9amar">hamza safwan</a>.
+      </div>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.frontendmentor.io/profile/Safwa9amar">hamza safwan</a>.
-    </div>
   </body>
-  <script>
-    //get close button and add event listener
-    const closeBtn = document.querySelector(".close-nav");
-    // get toggle-menu button and add event listener
-    const showMenu = document.querySelector(".toggle-menu");
-    showMenu.addEventListener("click", () => {
-      document.querySelector("nav").classList.add("visible");
-      document.querySelector("nav").classList.remove("invisible");
-    });
-    closeBtn.addEventListener("click", () => {
-      //get dropdown and add class to hide it
-      const nav = document.querySelector("nav");
-
-      nav.classList.remove("visible");
-      nav.classList.add("invisible");
-    });
-  </script>
+  <script src="./js/scripts.js"></script>
 </html>
