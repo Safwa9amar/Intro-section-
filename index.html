@@ -1,212 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
-    <!-- import styles.css from css folder -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!-- import main.css from css folder -->
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-    <!-- import dropdown.css from css folder -->
-    <link rel="stylesheet" href="./css/dropdown.css" />
-  </head>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- import styles.css from css folder -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- import main.css from css folder -->
+  <link rel="stylesheet" href="./css/main.css" />
 
-  <body class="bg-white">
-    <main class="relative">
-      <header
-        class="md:my-8 md:p-8 px-4 flex justify-between items-center h-[10vh]"
-      >
-        <div class="flex items-center gap-16">
-          <div class="header__logo">
-            <img src="./images/logo.svg" alt="logo" />
-          </div>
-          <nav
-            class="duration-300 invisible md:visible flex flex-col justify-center items-end md:flex-row md:m-2 md:p-0 md:static md:h-full md:w-auto absolute h-screen w-screen top-0 right-0 bg-[#00000079]"
-          >
-            <ul
-              class="flex flex-col py-[10%] md:flex-row gap-2 md:gap-12 px-6 w-2/3 h-full md:h-auto md:w-auto bg-white"
-            >
-              <li class="header__nav-item">
-                <div class="dropdown">
-                  <button class="dropdown__btn">
-                    <span>Features</span>
-                    <img
-                      class="down"
-                      src="./images/icon-arrow-down.svg"
-                      alt="arrow"
-                    />
-                    <img
-                      class="up"
-                      src="./images/icon-arrow-up.svg"
-                      alt="arrow"
-                    />
-                  </button>
-                  <div class="dropdown__content">
-                    <a class="dropdown__link" href="#">
-                      <img src="./images/icon-todo.svg" alt="todo" />
-                      <span>Todo</span>
-                    </a>
-                    <a class="dropdown__link" href="#">
-                      <img src="./images/icon-calendar.svg" alt="calender" />
-                      <span>Calender</span>
-                    </a>
-                    <a class="dropdown__link" href="#">
-                      <img src="./images/icon-reminders.svg" alt="reminders" />
-                      <span>Reminders</span>
-                    </a>
-                    <a class="dropdown__link" href="#">
-                      <img src="./images/icon-planning.svg" alt="planning" />
-                      <span>Planning</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="header__nav-item">
-                <div class="dropdown">
-                  <button class="dropdown__btn">
-                    <span>Company</span>
-                    <img
-                      class="down"
-                      src="./images/icon-arrow-down.svg"
-                      alt="arrow"
-                    />
-                    <img
-                      class="up"
-                      src="./images/icon-arrow-up.svg"
-                      alt="arrow"
-                    />
-                  </button>
-                  <div class="dropdown__content">
-                    <a class="dropdown__link" href="#">
-                      <span>history</span>
-                    </a>
-                    <a class="dropdown__link" href="#">
-                      <span>our team</span>
-                    </a>
-                    <a class="dropdown__link" href="#">
-                      <span>company</span>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Careers</a>
-              </li>
-              <li class="header__nav-item">
-                <a href="#" class="header__nav-link">About</a>
-              </li>
-              <div class="flex mt-6 flex-col w-full gap-4 md:hidden">
-                <button class="header__btn">Login</button>
-                <button
-                  class="w-full border-2 border-black rounded-2xl px-6 py-2 hover:bg-black hover:text-white transition-all duration-100"
-                >
-                  Register
-                </button>
-              </div>
-            </ul>
-            <button class="close-nav transition-all duration-150 md:hidden">
-              <img
-                src="./images/icon-close-menu.svg"
-                alt="close"
-                class="absolute top-8 right-10"
-              />
-            </button>
-          </nav>
+  <!-- import dropdown.css from css folder -->
+  <link rel="stylesheet" href="./css/dropdown.css" />
+</head>
+
+<body class="bg-white">
+  <main class="relative">
+    <header class="md:my-8 md:p-8 px-4 flex justify-between items-center h-[10vh]">
+      <div class="flex items-center gap-16">
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="logo" />
         </div>
-        <button class="toggle-menu md:hidden">
-          <img src="./images/icon-menu.svg" alt="show-menu" />
+        <nav
+          class="duration-300 invisible md:visible flex flex-col justify-center items-end md:flex-row md:m-2 md:p-0 md:static md:h-full md:w-auto absolute h-screen w-screen top-0 right-0 bg-[#00000079]">
+          <ul class="flex flex-col py-[10%] md:flex-row gap-2 md:gap-12 px-6 w-2/3 h-full md:h-auto md:w-auto bg-white">
+            <li class="header__nav-item">
+              <div class="dropdown">
+                <button class="dropdown__btn">
+                  <span>Features</span>
+                  <img class="down" src="./images/icon-arrow-down.svg" alt="arrow" />
+                  <img class="up" src="./images/icon-arrow-up.svg" alt="arrow" />
+                </button>
+                <div class="dropdown__content">
+                  <a class="dropdown__link" href="#">
+                    <img src="./images/icon-todo.svg" alt="todo" />
+                    <span>Todo</span>
+                  </a>
+                  <a class="dropdown__link" href="#">
+                    <img src="./images/icon-calendar.svg" alt="calender" />
+                    <span>Calender</span>
+                  </a>
+                  <a class="dropdown__link" href="#">
+                    <img src="./images/icon-reminders.svg" alt="reminders" />
+                    <span>Reminders</span>
+                  </a>
+                  <a class="dropdown__link" href="#">
+                    <img src="./images/icon-planning.svg" alt="planning" />
+                    <span>Planning</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <div class="dropdown">
+                <button class="dropdown__btn">
+                  <span>Company</span>
+                  <img class="down" src="./images/icon-arrow-down.svg" alt="arrow" />
+                  <img class="up" src="./images/icon-arrow-up.svg" alt="arrow" />
+                </button>
+                <div class="dropdown__content">
+                  <a class="dropdown__link" href="#">
+                    <span>history</span>
+                  </a>
+                  <a class="dropdown__link" href="#">
+                    <span>our team</span>
+                  </a>
+                  <a class="dropdown__link" href="#">
+                    <span>company</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Careers</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About</a>
+            </li>
+            <div class="flex mt-6 flex-col w-full gap-4 md:hidden">
+              <button class="header__btn">Login</button>
+              <button
+                class="w-full border-2 border-black rounded-2xl px-6 py-2 hover:bg-black hover:text-white transition-all duration-100">
+                Register
+              </button>
+            </div>
+          </ul>
+          <button class="close-nav transition-all duration-150 md:hidden">
+            <img src="./images/icon-close-menu.svg" alt="close" class="absolute top-8 right-10" />
+          </button>
+        </nav>
+      </div>
+      <button class="toggle-menu md:hidden">
+        <img src="./images/icon-menu.svg" alt="show-menu" />
+      </button>
+      <div class="gap-4 hidden md:flex">
+        <button class="header__btn">Login</button>
+        <button
+          class="border-2 border-black rounded-lg px-6 py-2 hover:bg-black hover:text-white transition-all duration-300">
+          Register
         </button>
-        <div class="gap-4 hidden md:flex">
-          <button class="header__btn">Login</button>
+      </div>
+    </header>
+    <section class="flex flex-col-reverse md:flex-row justify-between w-full md:h-[80vh] md:px-24 md:pb-16">
+      <article class="flex flex-col items-stretch justify-between mx-4 md:m-20 md:mb-0 py-10 text-center md:text-left">
+        <div class="flex flex-col items-center md:items-start gap-5 md:gap-10">
+          <h1 class="text-4xl md:text-8xl font-bold">
+            Make <br class="hidden md:block" />
+            remote work
+          </h1>
+          <p class="md:text-[20px] text-gray-500">
+            Get your team in sync, no matter your location.<br class="hidden md:block" />
+            Streamline processes, create team rituals,
+            <br class="hidden md:block" />and watch productivity soar.
+          </p>
           <button
-            class="border-2 border-black rounded-lg px-6 py-2 hover:bg-black hover:text-white transition-all duration-300"
-          >
-            Register
+            class="md:self-start px-4 py-2 border-2 text-white border-black bg-black rounded-lg hover:bg-white hover:font-bold hover:text-black transition-all duration-300">
+            Learn more
           </button>
         </div>
-      </header>
-      <section
-        class="flex flex-col-reverse md:flex-row justify-between w-full md:h-[80vh] md:px-24 md:pb-16"
-      >
-        <article
-          class="flex flex-col items-stretch justify-between mx-4 md:m-20 md:mb-0 py-10 text-center md:text-left"
-        >
-          <div
-            class="flex flex-col items-center md:items-start gap-5 md:gap-10"
-          >
-            <h1 class="text-4xl md:text-8xl font-bold">
-              Make <br class="hidden md:block" />
-              remote work
-            </h1>
-            <p class="md:text-[20px] text-gray-500">
-              Get your team in sync, no matter your location.<br
-                class="hidden md:block"
-              />
-              Streamline processes, create team rituals,
-              <br class="hidden md:block" />and watch productivity soar.
-            </p>
-            <button
-              class="md:self-start px-4 py-2 border-2 text-white border-black bg-black rounded-lg hover:bg-white hover:font-bold hover:text-black transition-all duration-300"
-            >
-              Learn more
-            </button>
-          </div>
-          <div class="w-full mt-10 flex justify-between items-stretch">
-            <img
-              class="w-[50px] h-[20px] md:w-auto md:h-auto"
-              src="./images/client-databiz.svg"
-              alt="databiz"
-            />
-            <img
-              class="w-[50px] h-[20px] md:w-auto md:h-auto"
-              src="./images/client-audiophile.svg"
-              alt="audiophile"
-            />
-            <img
-              class="w-[50px] h-[20px] md:w-auto md:h-auto"
-              src="./images/client-meet.svg"
-              alt="meet"
-            />
-            <img
-              class="w-[50px] h-[20px] md:w-auto md:h-auto"
-              src="./images/client-maker.svg"
-              alt="maker"
-            />
-          </div>
-        </article>
-        <article>
-          <img
-            class="w-full md:h-full md:hidden"
-            src="./images/image-hero-mobile.png"
-            alt="hero"
-          />
-          <img
-            class="w-full h-full hidden md:block"
-            src="./images/image-hero-desktop.png"
-            alt="hero"
-          />
-        </article>
-      </section>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://www.frontendmentor.io/profile/Safwa9amar">hamza safwan</a>.
-      </div>
-    </main>
+        <div class="w-full mt-10 flex justify-between items-stretch">
+          <img class="w-[50px] h-[20px] md:w-auto md:h-auto" src="./images/client-databiz.svg" alt="databiz" />
+          <img class="w-[50px] h-[20px] md:w-auto md:h-auto" src="./images/client-audiophile.svg" alt="audiophile" />
+          <img class="w-[50px] h-[20px] md:w-auto md:h-auto" src="./images/client-meet.svg" alt="meet" />
+          <img class="w-[50px] h-[20px] md:w-auto md:h-auto" src="./images/client-maker.svg" alt="maker" />
+        </div>
+      </article>
+      <article>
+        <img class="w-full md:h-full md:hidden" src="./images/image-hero-mobile.png" alt="hero" />
+        <img class="w-full h-full hidden md:block" src="./images/image-hero-desktop.png" alt="hero" />
+      </article>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/Safwa9amar">hamza safwan</a>.
+    </div>
+  </main>
+</body>
+<script src="./js/scripts.js"></script>
 
-  </body>
-  <script src="./js/scripts.js"></script>
 </html>
